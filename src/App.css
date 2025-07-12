@@ -68,7 +68,7 @@ header {
 }
 .card {
   padding: 10px 10px;
-  border: solid 1px #656567;
+  border: solid 1px #e1e1e1;
   border-radius: 21px;
   background: #f1f1f3;
 }
@@ -381,4 +381,101 @@ header {
 .questions li {
   font-size: 20px;
   font-weight: 450;
+}
+.experience {
+  max-width: 1600px;
+  margin: auto;
+  margin-bottom: 200px;
+}
+.experience h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  color: #1a1a1a;
+}
+.p {
+  max-width: 1200px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 80px;
+  color: #656567;
+}
+.experience-cards-box {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px 20px;
+  background: #fcfcfd;
+  border-radius: 18px;
+}
+.exper-card {
+  padding: 30px 30px;
+  border: solid 1px #f1f1f3;
+  border-radius: 16px;
+}
+.exper-card h1 {
+  font-size: 80px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #e4e4e7;
+}
+.exper-card h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #333333;
+}
+.exper-card p {
+  max-width: 1200px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #656567;
+}
+footer {
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  gap: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-email img {
+  margin-bottom: 50px;
+}
+.email-box {
+  display: flex;
+  gap: 10px;
+}
+.email-box input {
+  padding: 16px 20px;
+  text-align: start;
+  border-radius: 32px;
+  border: solid 1px #f1f1f3;
+}
+.email-box button {
+  padding: 16px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #262626;
+  background: #ffd400;
+  border-radius: 32px;
+  border: none;
+}
+.footer-faq {
+  padding: 80px 80px;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer-faq h4 {
+  font-size: 20px;
+  font-weight: 450;
+  margin-bottom: 36px;
+  color: #262626;
+}
+.footer-faq li {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 18px;
+  color: #656565;
 }

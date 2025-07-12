@@ -534,6 +534,38 @@ function Home() {
           <li>Customer Support</li>
         </ul>
       </div>
+      <div className="experience">
+        <h1>Seamless Experience.</h1>
+        <p className="p">
+          At Klothink, we've designed a straightforward shopping experience to
+          make fashion accessible. Explore the journey from discovering the
+          latest trends to receiving your handpicked styles with ease.
+        </p>
+        <div className="experience-cards-box">
+          <div className="exper-card">
+            <h1>01</h1>
+            <h4>Discover Trends</h4>
+            <p>Explore our curated collection of over 1000 styles</p>
+          </div>
+          <div className="exper-card">
+            <h1>02</h1>
+            <h4>Secure Checkout</h4>
+            <p>
+              Add your items to the cart and proceed to our secure checkout.
+            </p>
+          </div>
+          <div className="exper-card">
+            <h1>03</h1>
+            <h4>Discover Trends</h4>
+            <p>Experience 95% same-day dispatch on orders.</p>
+          </div>
+          <div className="exper-card">
+            <h1>04</h1>
+            <h4>Unbox Happiness</h4>
+            <p>Receive your carefully packaged Klothink order.</p>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
