@@ -1,0 +1,16 @@
+<svg width="60.000000" height="60.000000" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip137_1397">
+			<rect id="Logo" rx="0.000000" width="59.000000" height="59.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip137_1397)">
+		<path id="Ellipse 4" d="M6 53.99C6 50.84 6.62 47.72 7.82 44.81C9.03 41.9 10.8 39.25 13.02 37.02C15.25 34.8 17.9 33.03 20.81 31.82C23.72 30.62 26.84 29.99 30 29.99L30 53.99L6 53.99Z" fill="#1A1A1A" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Ellipse 6" d="M30 29.99C30 33.15 30.62 36.27 31.82 39.18C33.03 42.09 34.8 44.74 37.02 46.97C39.25 49.19 41.9 50.96 44.81 52.17C47.72 53.37 50.84 53.99 54 53.99L54 29.99L30 29.99Z" fill="#FFD400" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Ellipse 5" d="M30 29.99C30 26.84 29.37 23.72 28.17 20.81C26.96 17.9 25.19 15.25 22.97 13.02C20.74 10.8 18.09 9.03 15.18 7.82C12.27 6.62 9.15 5.99 6 5.99L6 29.99L30 29.99Z" fill="#FFD400" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Ellipse 7" d="M54 5.99C54 9.15 53.37 12.27 52.17 15.18C50.96 18.09 49.19 20.74 46.97 22.97C44.74 25.19 42.09 26.96 39.18 28.17C36.27 29.37 33.15 29.99 30 29.99L30 5.99L54 5.99Z" fill="#1A1A1A" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

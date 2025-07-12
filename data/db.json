@@ -1,0 +1,32 @@
+{
+  "clothes": [
+    {
+      "img": "https://www.mytheresa.com/media/1094/1238/100/8b/P00908466.jpg",
+      "name": "Classic Denim Jeans",
+      "category": "menswear",
+      "price": 45,
+      "id": 1
+    },
+    {
+      "img": "https://www.mytheresa.com/media/1094/1238/100/8b/P00908466.jpg",
+      "name": "Classic Denim Jeans",
+      "category": "womenswear",
+      "price": 45,
+      "id": 2
+    },
+    {
+      "img": "https://www.mytheresa.com/media/1094/1238/100/8b/P00908466.jpg",
+      "name": "Classic Denim Jeans",
+      "category": "kidswear",
+      "price": 45,
+      "id": 3
+    },
+    {
+      "img": "https://www.mytheresa.com/media/1094/1238/100/8b/P00908466.jpg",
+      "name": "Classic Denim Jeans",
+      "category": "menswear",
+      "price": 45,
+      "id": 4
+    }
+  ]
+}
