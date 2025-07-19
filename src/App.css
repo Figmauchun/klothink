@@ -28,16 +28,17 @@ header {
   padding: 14px 24px;
   list-style: none;
   outline: none;
+  font-size: 18px;
+  font-weight: 450;
   border-radius: 100px;
   background: #fff;
   color: #656567;
   border: solid 1px #e1e1e1;
 }
 .header-ul li:hover {
-  font-size: 16px;
-  font-weight: 450;
   background: #262626;
   color: #f1f1f1;
+  transition: ease-in 0.3s;
 }
 .header-sup {
   display: flex;
@@ -55,6 +56,7 @@ header {
 .header-sup button:hover {
   background: #262626;
   color: #f1f1f1;
+  transition: ease-in 0.3s;
 }
 .cards {
   max-width: 1600px;
@@ -113,10 +115,7 @@ header {
   font-weight: 500;
   color: #98989a;
 }
-.abi img {
-  width: 550px;
-  height: 612px;
-}
+
 .ap p {
   font-size: 18px;
   font-weight: 400;
@@ -232,6 +231,7 @@ header {
   background: #fff;
   border-radius: 32px;
   border: solid 1px #e1e1e1;
+  transition: ease-in 0.3s;
 }
 .fil-btn button:hover {
   color: #fff;
@@ -894,12 +894,12 @@ footer {
   max-width: 1600px;
   margin: auto;
   display: flex;
-  gap: 50px;
-  justify-content: space-between;
+  gap: 150px;
 }
 .details img {
-  width: 500px;
-  height: 500px;
+  border-radius: 32px;
+  width: 565, 5px;
+  height: 475.5px;
 }
 .fit-box {
   display: flex;

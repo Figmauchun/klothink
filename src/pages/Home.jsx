@@ -2,6 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import homei from "../images/homei.svg";
 import ione from "../images/ione.png";
+import itwo from "../images/itwo.png";
+import ithree from "../images/ithree.png";
+import ifour from "../images/ifour.png";
+import ifive from "../images/ifive.png";
+import isix from "../images/isix.png";
 import io from "../images/io.png";
 import it from "../images/it.png";
 import ith from "../images/ith.png";
@@ -158,52 +163,52 @@ function Home() {
           </div>
           <div className="ecard">
             <div className="ecard-img-box">
-              <img src={ione} alt="" />
-              <h4>Passionate Craftsmanship</h4>
+              <img src={itwo} alt="" />
+              <h4>Fashion Forward</h4>
             </div>
             <p>
-              Every garment at Klothink is crafted with passion, reflecting our
-              commitment to quality and innovation.
+              We're more than a brand; we're trendsetters, curating styles that
+              empower and inspire confidence.
             </p>
           </div>
           <div className="ecard">
             <div className="ecard-img-box">
-              <img src={ione} alt="" />
-              <h4>Passionate Craftsmanship</h4>
+              <img src={ithree} alt="" />
+              <h4>Customer-Centric Approach</h4>
             </div>
             <p>
-              Every garment at Klothink is crafted with passion, reflecting our
-              commitment to quality and innovation.
+              At Klothink, our customers are at the heart of everything we do.
+              Your satisfaction is our measure of success.
             </p>
           </div>
           <div className="ecard">
             <div className="ecard-img-box">
-              <img src={ione} alt="" />
-              <h4>Passionate Craftsmanship</h4>
+              <img src={ifour} alt="" />
+              <h4>Global Inspiration</h4>
             </div>
             <p>
-              Every garment at Klothink is crafted with passion, reflecting our
-              commitment to quality and innovation.
+              Influenced by global trends, we bring you a diverse and dynamic
+              collection.
             </p>
           </div>
           <div className="ecard">
             <div className="ecard-img-box">
-              <img src={ione} alt="" />
-              <h4>Passionate Craftsmanship</h4>
+              <img src={ifive} alt="" />
+              <h4>Empowering Your Style</h4>
             </div>
             <p>
-              Every garment at Klothink is crafted with passion, reflecting our
-              commitment to quality and innovation.
+              Beyond clothing, Klothink is a lifestyle. Join us on a journey of
+              self-expression.
             </p>
           </div>
           <div className="ecard">
             <div className="ecard-img-box">
-              <img src={ione} alt="" />
-              <h4>Passionate Craftsmanship</h4>
+              <img src={isix} alt="" />
+              <h4>Sustainable Practices</h4>
             </div>
             <p>
-              Every garment at Klothink is crafted with passion, reflecting our
-              commitment to quality and innovation.
+              Klothink is committed to sustainability, integrating eco-friendly
+              practices into our production process.
             </p>
           </div>
         </div>
