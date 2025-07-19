@@ -3,6 +3,20 @@ import { Link } from "react-router-dom";
 import homei from "../images/homei.svg";
 import ione from "../images/ione.png";
 import io from "../images/io.png";
+import it from "../images/it.png";
+import ith from "../images/ith.png";
+import { FaPlus } from "react-icons/fa";
+import { RiShoppingBag4Fill } from "react-icons/ri";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import "./styles.css";
+
+// import required modules
+import { Autoplay, Pagination } from "swiper/modules";
 function Home() {
   const [data, setData] = useState([]);
   const [search, setSearch] = useState("");
@@ -13,13 +27,11 @@ function Home() {
       .then((json) => setData(json))
       .catch((err) => console.log(err));
   }, []);
-
   const Qidruv = data.filter((e) => {
     const inputsearch = e.name.toLowerCase().includes(search.toLowerCase());
     const btnsearch = category === "all" || e.category === category;
     return inputsearch && btnsearch;
   });
-
   return (
     <>
       <div className="about">
@@ -37,19 +49,7 @@ function Home() {
           </div>
           <div className="about-btn-box">
             <button className="btni">
-              {/* SVG Icon */}
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M7.5 6V6.75H5.51C4.55 6.75 3.74 7.47 3.64 8.42L2.38 20.42C2.26 21.53 3.13 22.5 4.24 22.5H19.75C20.86 22.5 21.73 21.53 21.61 20.42L20.35 8.42C20.25 7.47 19.44 6.75 18.48 6.75H16.5V6C16.5 3.51 14.48 1.5 12 1.5C9.51 1.5 7.5 3.51 7.5 6ZM12 3C10.34 3 9 4.34 9 6V6.75H15V6C15 4.34 13.65 3 12 3ZM9 11.25C9 12.9 10.34 14.25 12 14.25C13.65 14.25 15 12.9 15 11.25V10.5C15 10.08 15.33 9.75 15.75 9.75C16.16 9.75 16.5 10.08 16.5 10.5V11.25C16.5 13.73 14.48 15.75 12 15.75C9.51 15.75 7.5 13.73 7.5 11.25V10.5C7.5 10.08 7.83 9.75 8.25 9.75C8.66 9.75 9 10.08 9 10.5V11.25Z"
-                  fill="#262626"
-                />
-              </svg>
+              <RiShoppingBag4Fill />
               Shop Now
             </button>
             <button className="btnt">Contact Us</button>
@@ -103,22 +103,38 @@ function Home() {
           <button>Party</button>
         </div>
       </div>
-      <div className="cards">
-        {Qidruv &&
-          Qidruv.map((e) => {
-            return (
-              <Link to={`/clothes/${e.id}`}>
-                <div className="card">
-                  <div className="card-img-box">
-                    <img src={e.img} alt="" />
-                  </div>
-                  <h4>{e.name}</h4>
-                  <span>${e.price} </span>
-                </div>
-              </Link>
-            );
-          })}
-      </div>
+      <Swiper
+        slidesPerView={4}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay, Pagination]}
+        className="mySwiper"
+      >
+        <div className="cards">
+          {Qidruv &&
+            Qidruv.map((e) => {
+              return (
+                <SwiperSlide>
+                  <Link to={`/clothes/${e.id}`}>
+                    <div className="card">
+                      <div className="card-img-box">
+                        <img src={e.img} alt="" />
+                      </div>
+                      <h4>{e.name}</h4>
+                      <span>${e.price}</span>
+                    </div>
+                  </Link>
+                </SwiperSlide>
+              );
+            })}
+        </div>
+      </Swiper>
       <div className="experience">
         <div className="ex-text-box">
           <h1>The Klothink Experience.</h1>
@@ -311,9 +327,9 @@ function Home() {
           </div>
           <div className="comcard">
             <div className="comib">
-              <img src={io} alt="" />
+              <img src={it} alt="" />
               <div className="comib-h">
-                <h5>Sarah Thompson</h5>
+                <h5>Rajesh Patel</h5>
                 <div className="com-i-box">
                   <svg
                     width="17.502930"
@@ -409,13 +425,13 @@ function Home() {
               </div>
             </div>
             <p>
-              Klothink exceeded my expectations. The gown's quality and design
-              made me feel like a queen. Fast shipping, too!
+              Absolutely love the style and warmth of the jacket. A perfect
+              blend of fashion and functionality!
             </p>
           </div>
           <div className="comcard">
             <div className="comib">
-              <img src={io} alt="" />
+              <img src={ith} alt="" />
               <div className="comib-h">
                 <h5>Sarah Thompson</h5>
                 <div className="com-i-box">
@@ -513,15 +529,15 @@ function Home() {
               </div>
             </div>
             <p>
-              Klothink exceeded my expectations. The gown's quality and design
-              made me feel like a queen. Fast shipping, too!
+              Adorable and comfortable! My daughter loves her new outfit. Thank
+              you, Klothink, for dressing our little fashionista.
             </p>
           </div>
         </div>
       </div>
       <div className="questions">
         <h1>Questions? We Have Answers.</h1>
-        <p>
+        <p className="que-p">
           Ease into the world of Klothink with clarity. Our FAQs cover a
           spectrum of topics, ensuring you have the information you need for a
           seamless shopping experience.
@@ -533,6 +549,182 @@ function Home() {
           <li>Returns</li>
           <li>Customer Support</li>
         </ul>
+        <div className="que-accordion">
+          <div className="accs">
+            <div className="acc-card">
+              <input type="checkbox" name="" id="" />
+              <div className="acc-icon-box">
+                <h2>Can I modify my order after placing it?</h2>
+                <i>
+                  <FaPlus />
+                </i>
+              </div>
+              <p className="acc-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias ea omnis doloremque maxime, alias dignissimos corrupti
+                recusandae ratione velit debitis.
+              </p>
+            </div>
+            <div className="acc-card">
+              <input type="checkbox" name="" id="" />
+              <div className="acc-icon-box">
+                <h2>How do I initiate a return?</h2>
+                <i>
+                  <FaPlus />
+                </i>
+              </div>
+              <p className="acc-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias ea omnis doloremque maxime, alias dignissimos corrupti
+                recusandae ratione velit debitis.
+              </p>
+            </div>
+            <div className="acc-card">
+              <input type="checkbox" name="" id="" />
+              <div className="acc-icon-box">
+                <h2>How can I unsubscribe from the newsletter?</h2>
+                <i>
+                  <FaPlus />
+                </i>
+              </div>
+              <p className="acc-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias ea omnis doloremque maxime, alias dignissimos corrupti
+                recusandae ratione velit debitis.
+              </p>
+            </div>
+            <div className="acc-card">
+              <input type="checkbox" name="" id="" />
+              <div className="acc-icon-box">
+                <h2>Do you offer exchanges for products?</h2>
+                <i>
+                  <FaPlus />
+                </i>
+              </div>
+              <p className="acc-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias ea omnis doloremque maxime, alias dignissimos corrupti
+                recusandae ratione velit debitis.
+              </p>
+            </div>
+          </div>
+          <div className="accs">
+            <div className="acc-card">
+              <input type="checkbox" name="" id="" />
+              <div className="acc-icon-box">
+                <h2>How can I place an order on Klothink?</h2>
+                <i>
+                  <FaPlus />
+                </i>
+              </div>
+              <p className="acc-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias ea omnis doloremque maxime, alias dignissimos corrupti
+                recusandae ratione velit debitis.
+              </p>
+            </div>
+            <div className="acc-card">
+              <input type="checkbox" name="" id="" />
+              <div className="acc-icon-box">
+                <h2>What payment methods do you accept?</h2>
+                <i>
+                  <FaPlus />
+                </i>
+              </div>
+              <p className="acc-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias ea omnis doloremque maxime, alias dignissimos corrupti
+                recusandae ratione velit debitis.
+              </p>
+            </div>
+            <div className="acc-card">
+              <input type="checkbox" name="" id="" />
+              <div className="acc-icon-box">
+                <h2>How can I track my order?</h2>
+                <i>
+                  <FaPlus />
+                </i>
+              </div>
+              <p className="acc-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias ea omnis doloremque maxime, alias dignissimos corrupti
+                recusandae ratione velit debitis.
+              </p>
+            </div>
+            <div className="acc-card">
+              <input type="checkbox" name="" id="" />
+              <div className="acc-icon-box">
+                <h2>What is your shipping policy?</h2>
+                <i>
+                  <FaPlus />
+                </i>
+              </div>
+              <p className="acc-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias ea omnis doloremque maxime, alias dignissimos corrupti
+                recusandae ratione velit debitis.
+              </p>
+            </div>
+          </div>
+          <div className="accs">
+            <div className="acc-card">
+              <input type="checkbox" name="" id="" />
+              <div className="acc-icon-box">
+                <h2>Are there any additional fees for returns?</h2>
+                <i>
+                  <FaPlus />
+                </i>
+              </div>
+              <p className="acc-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias ea omnis doloremque maxime, alias dignissimos corrupti
+                recusandae ratione velit debitis.
+              </p>
+            </div>
+            <div className="acc-card">
+              <input type="checkbox" name="" id="" />
+              <div className="acc-icon-box">
+                <h2>How do I create an account on Klothink?</h2>
+                <i>
+                  <FaPlus />
+                </i>
+              </div>
+              <p className="acc-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias ea omnis doloremque maxime, alias dignissimos corrupti
+                recusandae ratione velit debitis.
+              </p>
+            </div>
+            <div className="acc-card">
+              <input type="checkbox" name="" id="" />
+              <div className="acc-icon-box">
+                <h2>Can I change my account information?</h2>
+                <i>
+                  <FaPlus />
+                </i>
+              </div>
+              <p className="acc-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias ea omnis doloremque maxime, alias dignissimos corrupti
+                recusandae ratione velit debitis.
+              </p>
+            </div>
+            <div className="acc-card">
+              <input type="checkbox" name="" id="" />
+              <div className="acc-icon-box">
+                <h2>Are my personal details secure on Klothink?</h2>
+                <i>
+                  <FaPlus />
+                </i>
+              </div>
+              <p className="acc-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias ea omnis doloremque maxime, alias dignissimos corrupti
+                recusandae ratione velit debitis.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="experience">
         <h1>Seamless Experience.</h1>

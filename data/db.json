@@ -1,32 +1,112 @@
 {
   "clothes": [
     {
-      "img": "https://www.mytheresa.com/media/1094/1238/100/8b/P00908466.jpg",
+      "img": "/images/c1.png",
       "name": "Classic Denim Jeans",
       "category": "menswear",
-      "price": 45,
+      "fit": "Slim Fit",
+      "price": 49.99,
+      "Material": "Synthetic",
       "id": 1
     },
     {
-      "img": "https://carvesports.co/cdn/shop/files/Front_1_dfef6bab-f54a-40f8-a5f1-5c2036389705.png?v=1749054115",
+      "img": "/images/c2.png",
       "name": "Classic Denim Jeans",
       "category": "womenswear",
-      "price": 45,
+      "fit": "Relaxed Fit",
+      "price": 39.99,
+      "Material": "Natural",
       "id": 2
     },
     {
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcdB8JOYYst0VohdeCVrWEozX8eVDmVY1DZA&s",
+      "img": "/images/c3.png",
       "name": "Classic Denim Jeans",
       "category": "kidswear",
-      "price": 45,
+      "fit": "Regular Fit",
+      "price": 29.99,
+      "Material": "cotton",
       "id": 3
     },
     {
-      "img": "https://www.mytheresa.com/media/1094/1238/100/f4/P00959506.jpg",
+      "img": "/images/c4.png",
       "name": "Classic Denim Jeans",
       "category": "menswear",
-      "price": 45,
+      "fit": "Slim Fit",
+      "price": 44.99,
+      "Material": "wool",
       "id": 4
+    },
+    {
+      "img": "/images/c5.png",
+      "name": "Classic Charcoal Suit",
+      "category": "menswear",
+      "fit": "Slim Fit",
+      "price": 199.99,
+      "Material": "wool",
+      "id": 5
+    },
+    {
+      "img": "/images/c6.png",
+      "name": "Black French Cuff Shirt",
+      "category": "menswear",
+      "fit": "Regular Fit",
+      "price": 39.99,
+      "Material": "wool",
+      "id": 6
+    },
+    {
+      "img": "/images/c7.png",
+      "name": "Black Leather Oxford Shoes",
+      "category": "menswear",
+      "fit": "Black",
+      "price": 79.99,
+      "Material": "wool",
+      "id": 7
+    },
+    {
+      "img": "/images/c8.png",
+      "name": "Classic Black Leather Belt",
+      "category": "menswear",
+      "fit": "Genuine Leather",
+      "price": 29.99,
+      "Material": "wool",
+      "id": 8
+    },
+    {
+      "img": "/images/c9.png",
+      "name": "Performance Jacket",
+      "category": "menswear",
+      "fit": "Athletic Fit",
+      "price": 59.99,
+      "Material": "wool",
+      "id": 9
+    },
+    {
+      "img": "/images/c10.png",
+      "name": "Quick-Dry Athletic Shorts",
+      "category": "menswear",
+      "fit": "Relaxed Fit",
+      "price": 39.99,
+      "Material": "wool",
+      "id": 10
+    },
+    {
+      "img": "/images/c11.png",
+      "name": "High-Performance Leggings",
+      "category": "menswear",
+      "fit": "Compression Fit",
+      "price": 44.99,
+      "Material": "wool",
+      "id": 11
+    },
+    {
+      "img": "/images/c12.png",
+      "name": "Lightweight Running Shoes",
+      "category": "menswear",
+      "fit": "Black",
+      "price": 69.99,
+      "Material": "wool",
+      "id": 12
     }
   ]
 }

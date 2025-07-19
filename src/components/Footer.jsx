@@ -1,11 +1,14 @@
 import React from "react";
 import logo from "../images/logo.svg";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
       <footer>
         <div className="footer-email">
-          <img src={logo} alt="" />
+          <Link to="/">
+            <img src={logo} alt="" />
+          </Link>
           <div className="email-box">
             <input type="email" name="" id="" placeholder="Enter Your Email" />
             <button>Subscribe</button>

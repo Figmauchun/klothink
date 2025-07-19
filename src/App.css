@@ -31,13 +31,13 @@ header {
   border-radius: 100px;
   background: #fff;
   color: #656567;
-  border: solid 1px #f1f1f3;
+  border: solid 1px #e1e1e1;
 }
 .header-ul li:hover {
   font-size: 16px;
   font-weight: 450;
-  background: #f7f7f8;
-  color: #262626;
+  background: #262626;
+  color: #f1f1f1;
 }
 .header-sup {
   display: flex;
@@ -50,7 +50,11 @@ header {
   color: #262626;
   background: #fff;
   border-radius: 100px;
-  border: solid 1px #f1f1f3;
+  border: solid 1px #e1e1e1;
+}
+.header-sup button:hover {
+  background: #262626;
+  color: #f1f1f1;
 }
 .cards {
   max-width: 1600px;
@@ -60,9 +64,9 @@ header {
   gap: 30px;
   margin-bottom: 100px;
 }
-.cards img {
+.card-img-box img {
   width: 100%;
-  height: 400px;
+  margin: auto;
   border-radius: 21px;
   margin-bottom: 30px;
 }
@@ -141,7 +145,7 @@ header {
   font-weight: 500;
   color: #262626;
   border-radius: 32px;
-  border: solid 1px #f1f1f3;
+  border: solid 1px #e1e1e1;
 }
 .about-btn-box button:hover {
   background: #ffd400;
@@ -195,9 +199,9 @@ header {
   padding: 18px 30px;
   font-size: 18px;
   font-weight: 500;
-  background: #ffd400;
+  background: #fff;
   border-radius: 32px;
-  border: none;
+  border: solid 1px #e1e1e1;
 }
 .filter-box {
   max-width: 1600px;
@@ -227,15 +231,12 @@ header {
   color: #262626;
   background: #fff;
   border-radius: 32px;
-  border: solid 1px #f1f1f3;
+  border: solid 1px #e1e1e1;
 }
 .fil-btn button:hover {
   color: #fff;
   background: #262626;
   transition: ease-in 0.2s;
-}
-.card-img-box img {
-  background: #fff;
 }
 .fil-category {
   display: flex;
@@ -273,7 +274,7 @@ header {
   background: #fcfcfd;
 }
 .ecard {
-  border: solid 1px #f1f1f3;
+  border: solid 1px #e1e1e1;
   border-radius: 20px;
   padding: 40px 40px;
   background: #fff;
@@ -318,9 +319,9 @@ header {
 }
 .com-text-box button {
   padding: 18px 30px;
-  border: none;
+  border: solid 1px #e1e1e1;
   border-radius: 32px;
-  background: #ffd400;
+  background: #fff;
   color: #262626;
   font-size: 18px;
   font-weight: 500;
@@ -335,7 +336,7 @@ header {
 .comcard {
   padding: 50px 50px;
   border-radius: 20px;
-  border: solid 1px #f1f1f3;
+  border: solid 1px #e1e1e1;
 }
 .comib {
   display: flex;
@@ -366,7 +367,7 @@ header {
   margin-bottom: 36px;
   color: #1a1a1a;
 }
-.questions p {
+.que-p {
   max-width: 1200px;
   font-size: 18px;
   font-weight: 400;
@@ -410,7 +411,7 @@ header {
 }
 .exper-card {
   padding: 30px 30px;
-  border: solid 1px #f1f1f3;
+  border: solid 1px #e1e1e1;
   border-radius: 16px;
 }
 .exper-card h1 {
@@ -450,7 +451,7 @@ footer {
   padding: 16px 20px;
   text-align: start;
   border-radius: 32px;
-  border: solid 1px #f1f1f3;
+  border: solid 1px #e1e1e1;
 }
 .email-box button {
   padding: 16px 30px;
@@ -478,4 +479,533 @@ footer {
   font-weight: 400;
   margin-bottom: 18px;
   color: #656565;
+}
+.acc-card {
+  padding: 30px 30px;
+  border: solid 1px #e1e1e1;
+  border-radius: 16px;
+  height: fit-content;
+  margin-bottom: 20px;
+}
+.acc-card input[type="checkbox"] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+.acc-card input[type="checkbox"]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  display: none;
+  visibility: hidden;
+  transform: translateX(-50%);
+}
+.acc-icon-box {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.acc-card h2 {
+  font-size: 18px;
+  font-weight: 450;
+}
+.acc-p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.que-accordion {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.discover {
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  gap: 80px;
+  margin-bottom: 80px;
+  align-items: center;
+}
+.discover h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 36px;
+  color: #1a1a1a;
+}
+.discover p {
+  max-width: 670px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #656565;
+}
+.dis-cards-box {
+  padding: 40px 50px;
+  border: solid 1px #e1e1e1;
+  border-radius: 20px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.dcb h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #262626;
+  margin-bottom: 14px;
+}
+.dcb p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #656565;
+}
+.dis-filter-box {
+  max-width: 1600px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-bottom: 90px;
+}
+.dis-btn-box {
+  max-width: 685px;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  padding: 10px 10px;
+  border: solid 1px #e1e1e1;
+  border-radius: 100px;
+}
+.dis-filter-box button {
+  font-size: 18px;
+  font-weight: 450;
+  padding: 14px 24px;
+  border: solid 1px #e1e1e1;
+  border-radius: 100px;
+  background: #f7f7f8;
+  color: #4c4c4d;
+}
+.dis-filter-box button:hover {
+  border: none;
+  background: #ffd400;
+  transition: ease-in 0.3s;
+}
+.description {
+  max-width: 1600px;
+  margin: auto;
+}
+.description h3 {
+  font-size: 24px;
+  font-weight: 450;
+  color: #262626;
+  margin-bottom: 15px;
+}
+.description p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #656565;
+  margin-bottom: 50px;
+}
+.Klothink {
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  gap: 80px;
+  margin-bottom: 80px;
+  align-items: center;
+}
+.Klothink h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 36px;
+  color: #1a1a1a;
+}
+.Klothink p {
+  max-width: 670px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #656565;
+}
+.klo-cards-box {
+  padding: 40px 50px;
+  border: solid 1px #e1e1e1;
+  border-radius: 20px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.klo h3 {
+  font-size: 18px;
+  font-weight: 450;
+  color: #656565;
+  margin-bottom: 10px;
+}
+.klo p {
+  font-size: 20px;
+  font-weight: 450;
+  color: #262626;
+}
+.global-help {
+  max-width: 1600px;
+  margin: auto;
+}
+.global-help span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #656565;
+  margin-bottom: 20px;
+}
+.glo-cards {
+  padding: 50px 50px;
+  border-radius: 20px;
+  border: solid 1px #e1e1e1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-top: 20px;
+  margin-bottom: 200px;
+}
+.glo-card h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #262626;
+}
+.glo-card p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #656565;
+}
+.directions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.directions button:nth-child(1) {
+  font-size: 18px;
+  font-weight: 450;
+  padding: 18px 24px;
+  border-radius: 32px;
+  background: #f1f1f1;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.directions button:nth-child(2) {
+  font-size: 18px;
+  font-weight: 450;
+  padding: 18px 24px;
+  border-radius: 32px;
+  display: flex;
+  gap: 10px;
+  background: #f1f1f1;
+  align-items: center;
+}
+.directions button:hover {
+  background: #262626;
+  color: #fff;
+  transition: ease-in 0.3s;
+}
+.Policy {
+  max-width: 1600px;
+  margin: auto;
+  margin-bottom: 80px;
+}
+.pp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.policy-h-box h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 36px;
+  color: #1a1a1a;
+}
+.policy-h-box p {
+  max-width: 900px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #656567;
+}
+.pbtn-box button {
+  padding: 18px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 32px;
+  border: solid 1px #f1f1f1;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.policy-cards-box {
+  max-width: 1600px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px 50px;
+  border: solid 1px #f1f1f1;
+  border-radius: 20px;
+}
+.policy-card h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #262626;
+}
+.policy-card p {
+  max-width: 430px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #656565;
+}
+.Cancellation {
+  max-width: 1600px;
+  margin: auto;
+  margin-bottom: 80px;
+}
+.cc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.Cancellation-h-box h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 36px;
+  color: #1a1a1a;
+}
+.Cancellation-h-box p {
+  max-width: 900px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #656567;
+}
+.Cancellation-box button {
+  padding: 18px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 32px;
+  border: solid 1px #f1f1f1;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.Cancellation-cards-box {
+  max-width: 1600px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px 50px;
+  border: solid 1px #f1f1f1;
+  border-radius: 20px;
+}
+.Cancellation-card h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #262626;
+}
+.Cancellation-card p {
+  max-width: 430px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #656565;
+}
+.Reviews {
+  max-width: 1600px;
+  margin: auto;
+  margin-bottom: 200px;
+}
+.reviews-text-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  align-items: center;
+}
+.revhbox h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 36px;
+  color: #1a1a1a;
+}
+.revhbox p {
+  max-width: 1000px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #656567;
+}
+.reviews-card-box {
+  padding: 30px 30px;
+  background: #fcfcfd;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.revcard {
+  padding: 50px 50px;
+  border-radius: 20px;
+  border: solid 1px #e1e1e1;
+}
+.comib {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.comib h5 {
+  font-size: 20px;
+  font-weight: 450;
+  margin-bottom: 5px;
+}
+.revcard p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.rev-i-box {
+  display: flex;
+  gap: 5px;
+}
+.Freque {
+  max-width: 1600px;
+  margin: auto;
+}
+.Freque h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 36px;
+  color: #1a1a1a;
+}
+.fre-p {
+  max-width: 1200px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 80px;
+  color: #656567;
+}
+.details {
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+.details img {
+  width: 500px;
+  height: 500px;
+}
+.fit-box {
+  display: flex;
+  justify-content: space-between;
+}
+.mySwiper {
+  max-width: 1600px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.about-box {
+  display: flex;
+  gap: 20px;
+  align-items: start;
+  margin-bottom: 20px;
+}
+.about-text-box span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #656565;
+  margin-bottom: 5px;
+}
+.about-text-box h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #262626;
+  margin-bottom: 14px;
+}
+.about-text-box h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #262626;
+}
+.about-btn-box {
+  display: flex;
+  gap: 15px;
+}
+.about-btn-box button {
+  padding: 18px 24px;
+  font-size: 18px;
+  font-weight: 450;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: solid 1px #e1e1e1;
+  border-radius: 32px;
+  color: #262626;
+  box-shadow: 0px 0px 10px #1a1a1a;
+}
+.about-btn-box button:hover {
+  background: #262626;
+  color: #fff;
+  border: solid 1px #262626;
+}
+.info-box {
+  padding: 30px 30px;
+  border: solid 1px #e1e1e1;
+  border-radius: 20px;
+}
+.info-box h4 {
+  font-size: 18px;
+  font-weight: 450;
+  color: #262626;
+  margin-bottom: 6px;
+}
+.Color input {
+  width: 24px;
+  height: 24px;
+}
+.color-input {
+  width: 100px;
+  padding: 8px 10px;
+  border: solid 1px #e1e1e1;
+  border-radius: 100px;
+  display: flex;
+  gap: 10px;
+}
+.info-box {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.size-btn {
+  display: flex;
+  gap: 10px;
+}
+.size-btn button {
+  padding: 8px 14px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #262626;
+  border: solid 1px #e1e1e1;
+  border-radius: 4px;
+}
+.size-btn button:hover {
+  background: #262626;
+  color: #fff;
+  border: solid 1px #262626;
+}
+.cards-text-box button:hover {
+  background: #ffd400;
+  border: solid 1px #ffd400;
+  transition: ease-in 0.3s;
+}
+.com-text-box button:hover {
+  background: #ffd400;
+  border: solid 1px #ffd400;
+  transition: ease-in 0.3s;
 }
