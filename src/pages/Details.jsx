@@ -44,7 +44,7 @@ function Details() {
               <div className="info-box">
                 <div className="Material">
                   <h4>Material</h4>
-                  <p>{detail.Material}</p>
+                  <p>{detail.material}</p>
                 </div>
                 <div className="Fit">
                   <h4>Fit</h4>

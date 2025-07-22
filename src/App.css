@@ -43,6 +43,7 @@ header {
 .header-sup {
   display: flex;
   gap: 14px;
+  align-items: center;
 }
 .header-sup button {
   padding: 14px 20px;
@@ -100,7 +101,6 @@ header {
 }
 .style {
   display: flex;
-  gap: 8px;
   align-items: start;
   margin-bottom: 24px;
 }
@@ -1008,4 +1008,96 @@ footer {
   background: #ffd400;
   border: solid 1px #ffd400;
   transition: ease-in 0.3s;
+}
+.login {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+.login-box h2 {
+  font-size: 64px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.Email-input {
+  display: flex;
+  gap: 16px;
+  padding: 16px 16px;
+  border: solid 1px #323b54;
+  border-radius: 15px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.iemail {
+  width: 414px;
+  background: none;
+  border: none;
+}
+.Pass-input {
+  display: flex;
+  gap: 16px;
+  padding: 16px 16px;
+  border: solid 1px #323b54;
+  border-radius: 15px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.ipass {
+  width: 414px;
+  background: none;
+  border: none;
+}
+.ibtn {
+  padding: 16px 221px;
+  background: #7b6ef6;
+  border-radius: 15px;
+  width: 100%;
+}
+.i {
+  font-size: 24px;
+}
+.Add {
+  max-width: 1600px;
+  margin: auto;
+  text-align: center;
+}
+.Add h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.add-input {
+  margin-bottom: 20px;
+}
+label {
+  font-size: 20px;
+  font-weight: 450;
+  margin-bottom: 8px;
+}
+.add-input-box input {
+  font-size: 15px;
+  font-weight: 400;
+  color: #656565;
+  width: 566px;
+  margin-top: 8px;
+  padding: 15px 15px;
+  background: #f1f1f1;
+  border-radius: 12px;
+}
+.aib {
+  display: flex;
+  gap: 5px;
+  max-width: 566px;
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+.aib input {
+  width: 100%;
+}
+.add-input-box button {
+  font-size: 18px;
+  font-weight: 450;
+  padding: 12px 24px;
+  border-radius: 12px;
+  background: #18a661;
 }

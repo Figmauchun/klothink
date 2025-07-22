@@ -6,7 +6,7 @@
       "category": "menswear",
       "fit": "Slim Fit",
       "price": 49.99,
-      "Material": "Synthetic",
+      "material": "Synthetic",
       "id": 1
     },
     {
@@ -15,7 +15,7 @@
       "category": "womenswear",
       "fit": "Relaxed Fit",
       "price": 39.99,
-      "Material": "Natural",
+      "material": "Natural",
       "id": 2
     },
     {
@@ -24,7 +24,7 @@
       "category": "kidswear",
       "fit": "Regular Fit",
       "price": 29.99,
-      "Material": "cotton",
+      "material": "cotton",
       "id": 3
     },
     {
@@ -33,7 +33,7 @@
       "category": "menswear",
       "fit": "Slim Fit",
       "price": 44.99,
-      "Material": "wool",
+      "material": "wool",
       "id": 4
     },
     {
@@ -42,7 +42,7 @@
       "category": "menswear",
       "fit": "Slim Fit",
       "price": 199.99,
-      "Material": "wool",
+      "material": "wool",
       "id": 5
     },
     {
@@ -51,7 +51,7 @@
       "category": "menswear",
       "fit": "Regular Fit",
       "price": 39.99,
-      "Material": "wool",
+      "material": "wool",
       "id": 6
     },
     {
@@ -60,7 +60,7 @@
       "category": "menswear",
       "fit": "Black",
       "price": 79.99,
-      "Material": "wool",
+      "material": "wool",
       "id": 7
     },
     {
@@ -69,7 +69,7 @@
       "category": "menswear",
       "fit": "Genuine Leather",
       "price": 29.99,
-      "Material": "wool",
+      "material": "wool",
       "id": 8
     },
     {
@@ -78,7 +78,7 @@
       "category": "menswear",
       "fit": "Athletic Fit",
       "price": 59.99,
-      "Material": "wool",
+      "material": "wool",
       "id": 9
     },
     {
@@ -87,7 +87,7 @@
       "category": "menswear",
       "fit": "Relaxed Fit",
       "price": 39.99,
-      "Material": "wool",
+      "material": "wool",
       "id": 10
     },
     {
@@ -96,7 +96,7 @@
       "category": "menswear",
       "fit": "Compression Fit",
       "price": 44.99,
-      "Material": "wool",
+      "material": "wool",
       "id": 11
     },
     {
@@ -105,8 +105,17 @@
       "category": "menswear",
       "fit": "Black",
       "price": 69.99,
-      "Material": "wool",
+      "material": "wool",
       "id": 12
+    },
+    {
+      "id": "8a4f",
+      "img": "https://images.uzum.uz/d0uln58n274lpu37q810/original.jpg",
+      "name": "Bosmali futbolka",
+      "category": "menswear",
+      "fit": "Slim Fit",
+      "price": "4.99",
+      "material": "Synthetic"
     }
   ]
 }
